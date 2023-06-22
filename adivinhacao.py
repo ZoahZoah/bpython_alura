@@ -1,6 +1,5 @@
 import random
 
-
 #Definição da função
 def jogar():
 
@@ -25,7 +24,7 @@ def jogar():
         total_de_tentativas = 5
 
     for rodada in range(1, total_de_tentativas + 1):
-        print("Tentativa {} de {}".format(rodada, total_de_tentativas))
+        print(f'Tentativa {rodada} de {total_de_tentativas}')
 
         chute_str = input("Digite um número entre 1 e 100: ")
         print("Você digitou " , chute_str)
@@ -41,7 +40,7 @@ def jogar():
         menor   = chute < numero_secreto
 
         if(acertou):
-            print("Você acertou e fez {} pontos!".format(pontos))
+            print(f'Você acertou e fez {pontos} pontos!')
             # Break irá parar a iteração
             break
         else:
