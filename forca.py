@@ -14,7 +14,6 @@ def jogar():
     print(letras_acertadas)
 
     while(not enforcou and not acertou):
-
         chute = funcoes.solicita_chute() # Solicita o chute ao usuário
 
         # '.upper' para letra maiúscula
@@ -31,7 +30,7 @@ def jogar():
         print(letras_acertadas)
 
         if ("_" not in letras_acertadas):
-            funcoes.mensagem_ganhador()
+            funcoes.mensagem_ganhador(pontos=0)
         elif (erros == 6):
             funcoes.mensagem_perdedor(palavra_secreta)
     funcoes.fim_jogo()

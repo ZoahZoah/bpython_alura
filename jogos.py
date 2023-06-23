@@ -1,5 +1,7 @@
 import forca
 import adivinhacao
+import funcoes
+
 
 def escolhe_jogo():
     print("*********************************")
@@ -8,7 +10,7 @@ def escolhe_jogo():
 
     print("(1) Forca (2) Adivinhação")
 
-    jogo = int(input("Qual jogo? "))
+    jogo = funcoes.input_inteiro('Qual jogo você gostaria de jogar? ')
 
     if(jogo == 1):
         print("Jogando forca")

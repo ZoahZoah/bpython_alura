@@ -5,7 +5,10 @@ def bem_vindo(jogo):
     print(f'***Bem vindo ao jogo da {jogo}!***')
     print('*********************************')
 
-def mensagem_ganhador():
+def mensagem_ganhador(pontos):
+    print(pontos)
+    if(pontos != 0):
+        print(f'Você acertou e fez {pontos} pontos!')
     print('Parabéns, você ganhou!')
     print("       ___________      ")
     print("      '._==_==_=_.'     ")
@@ -118,3 +121,14 @@ def marca_chute_correto(chute, palavra_secreta, letras_acertadas):
             print(index)
             letras_acertadas[index] = letra
         index = index + 1
+
+def input_inteiro(str):
+    chute = int(input(str))
+    return chute
+
+def mensagem_nivel_dificuldade():
+    print("Qual nível de dificuldade?")
+    print("(1) Fácil (2) Médio (3) Difícil")
+
+def mostrador_tentativas(rodada, total_de_tentativas):
+    print(f'Tentativa {rodada} de {total_de_tentativas}')
